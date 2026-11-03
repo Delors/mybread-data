@@ -1,0 +1,287 @@
+[
+  {
+    "id": "water",
+    "name": "water",
+    "category": "neutral",
+    "hydration_factor": 1,
+    "sourdough": "essential",
+    "acidity": "neutral",
+    "fat_content": "0%",
+    "typical_usage_pct": "0-100",
+    "nutrition_per_100g": {
+      "calories_kcal": 0,
+      "protein_g": 0,
+      "saturated_fat_g": 0,
+      "unsaturated_fat_g": 0,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "milk",
+    "name": "milk",
+    "category": "dairy",
+    "hydration_factor": 0.87,
+    "sourdough": "possible",
+    "acidity": "slightly_acidic",
+    "fat_content": "3.5%",
+    "typical_usage_pct": "0-100",
+    "nutrition_per_100g": {
+      "calories_kcal": 64,
+      "protein_g": 3.4,
+      "saturated_fat_g": 2.2,
+      "unsaturated_fat_g": 1.3,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "buttermilk",
+    "name": "buttermilk",
+    "category": "dairy",
+    "hydration_factor": 0.9,
+    "sourdough": "well-suited",
+    "acidity": "acidic",
+    "fat_content": "0.5-1%",
+    "typical_usage_pct": "20-100",
+    "nutrition_per_100g": {
+      "calories_kcal": 40,
+      "protein_g": 3.3,
+      "saturated_fat_g": 0.6,
+      "unsaturated_fat_g": 0.4,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "yoghurt-3-5",
+    "name": "yoghurt 3,5%",
+    "category": "dairy",
+    "hydration_factor": 0.8,
+    "acidity": "acidic",
+    "fat_content": "3.5%",
+    "typical_usage_pct": "10-40",
+    "nutrition_per_100g": {
+      "calories_kcal": 60,
+      "protein_g": 3.5,
+      "fat_g": 3.5,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "vinegar",
+    "name": "vinegar",
+    "category": "acidifier",
+    "hydration_factor": 1,
+    "sourdough": "supportive",
+    "acidity": "highly_acidic",
+    "fat_content": "0%",
+    "typical_usage_pct": "0-5",
+    "nutrition_per_100g": {
+      "calories_kcal": 20,
+      "protein_g": 0,
+      "saturated_fat_g": 0,
+      "unsaturated_fat_g": 0,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "whey",
+    "name": "whey",
+    "category": "dairy",
+    "hydration_factor": 0.93,
+    "sourdough": "well-suited",
+    "acidity": "slightly_acidic",
+    "fat_content": "0.5%",
+    "typical_usage_pct": "20-100",
+    "nutrition_per_100g": {
+      "calories_kcal": 25,
+      "protein_g": 0.8,
+      "saturated_fat_g": 0.3,
+      "unsaturated_fat_g": 0.2,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "oat-milk",
+    "name": "oat milk",
+    "category": "plant_based",
+    "hydration_factor": 0.87,
+    "sourdough": "possible",
+    "acidity": "neutral",
+    "fat_content": "1-2%",
+    "typical_usage_pct": "0-100",
+    "nutrition_per_100g": {
+      "calories_kcal": 46,
+      "protein_g": 1,
+      "saturated_fat_g": 0.2,
+      "unsaturated_fat_g": 1.3,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "beer",
+    "name": "beer",
+    "category": "fermented",
+    "hydration_factor": 0.92,
+    "sourdough": "possible",
+    "acidity": "slightly_acidic",
+    "fat_content": "0%",
+    "typical_usage_pct": "20-100",
+    "nutrition_per_100g": {
+      "calories_kcal": 43,
+      "protein_g": 0.5,
+      "saturated_fat_g": 0,
+      "unsaturated_fat_g": 0,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "kvass",
+    "name": "kvass",
+    "category": "fermented",
+    "hydration_factor": 0.95,
+    "sourdough": "well-suited",
+    "acidity": "acidic",
+    "fat_content": "0%",
+    "typical_usage_pct": "20-100",
+    "nutrition_per_100g": {
+      "calories_kcal": 30,
+      "protein_g": 1,
+      "saturated_fat_g": 0,
+      "unsaturated_fat_g": 0,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "fruit-juice",
+    "name": "fruit juice",
+    "category": "sweet",
+    "hydration_factor": 0.88,
+    "sourdough": "possible",
+    "acidity": "acidic",
+    "fat_content": "0%",
+    "typical_usage_pct": "10-50",
+    "nutrition_per_100g": {
+      "calories_kcal": 45,
+      "protein_g": 0.5,
+      "saturated_fat_g": 0,
+      "unsaturated_fat_g": 0,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "egg-whole",
+    "name": "egg (whole)",
+    "category": "enriched",
+    "hydration_factor": 0.75,
+    "sourdough": "possible",
+    "acidity": "neutral",
+    "fat_content": "10%",
+    "typical_usage_pct": "5-30",
+    "nutrition_per_100g": {
+      "calories_kcal": 155,
+      "protein_g": 13,
+      "saturated_fat_g": 3.3,
+      "unsaturated_fat_g": 7.7,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "egg-white",
+    "name": "egg white",
+    "category": "enriched",
+    "hydration_factor": 0.9,
+    "sourdough": "possible",
+    "acidity": "neutral",
+    "fat_content": "0%",
+    "typical_usage_pct": "5-20",
+    "nutrition_per_100g": {
+      "calories_kcal": 52,
+      "protein_g": 11,
+      "saturated_fat_g": 0,
+      "unsaturated_fat_g": 0,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "almond-milk",
+    "name": "almond milk",
+    "category": "plant_based",
+    "hydration_factor": 0.9,
+    "sourdough": "possible",
+    "acidity": "neutral",
+    "fat_content": "1-2%",
+    "typical_usage_pct": "0-100",
+    "nutrition_per_100g": {
+      "calories_kcal": 15,
+      "protein_g": 0.6,
+      "saturated_fat_g": 0.1,
+      "unsaturated_fat_g": 1.1,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "soy-milk",
+    "name": "soy milk",
+    "category": "plant_based",
+    "hydration_factor": 0.88,
+    "sourdough": "possible",
+    "acidity": "neutral",
+    "fat_content": "1.5-2.5%",
+    "typical_usage_pct": "0-100",
+    "nutrition_per_100g": {
+      "calories_kcal": 45,
+      "protein_g": 3.3,
+      "saturated_fat_g": 0.3,
+      "unsaturated_fat_g": 1.7,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "joghurt-1-5",
+    "name": "Joghurt 1,5%",
+    "hydration_factor": 0.8,
+    "acidity": "acidic",
+    "fat_content": "1.5%",
+    "typical_usage_pct": "10-40",
+    "nutrition_per_100g": {
+      "calories_kcal": 60,
+      "protein_g": 3.5,
+      "saturated_fat_g": 2.2,
+      "unsaturated_fat_g": 1.3,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "yoghurt",
+    "name": "yoghurt",
+    "category": "dairy",
+    "hydration_factor": 0.8,
+    "sourdough": "well-suited",
+    "acidity": "acidic",
+    "fat_content": "3.5%",
+    "typical_usage_pct": "10-40",
+    "nutrition_per_100g": {
+      "calories_kcal": 60,
+      "protein_g": 3.5,
+      "saturated_fat_g": 2.2,
+      "unsaturated_fat_g": 1.3,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "kefir-1-5-fett",
+    "name": "Kefir 1,5% Fett",
+    "category": "dairy",
+    "hydration_factor": 0.9,
+    "sourdough": "well-suited",
+    "acidity": "acidic",
+    "fat_content": "1.5",
+    "typical_usage_pct": "100",
+    "nutrition_per_100g": {
+      "calories_kcal": 45,
+      "protein_g": 3.3,
+      "saturated_fat_g": 1.2,
+      "unsaturated_fat_g": 0.3,
+      "fiber_g": 0
+    }
+  }
+]

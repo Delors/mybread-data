@@ -1,0 +1,560 @@
+[
+  {
+    "id": "sourdough-starter",
+    "name": "sourdough starter",
+    "category": "leavening",
+    "hydration_factor": 0.5,
+    "sourdough": "core",
+    "typical_usage_pct": "10-40",
+    "function": [
+      "leavening",
+      "acidification",
+      "flavor"
+    ],
+    "impact": [
+      "fermentation",
+      "acidity",
+      "structure"
+    ],
+    "nutrition_per_100g": {
+      "calories_kcal": 200,
+      "protein_g": 6,
+      "saturated_fat_g": 0.2,
+      "unsaturated_fat_g": 0.8,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "dried-yeast",
+    "name": "dried yeast",
+    "category": "leavening",
+    "hydration_factor": 0,
+    "sourdough": "alternative",
+    "typical_usage_pct": "0.5-2",
+    "function": [
+      "leavening"
+    ],
+    "impact": [
+      "fermentation_speed"
+    ],
+    "nutrition_per_100g": {
+      "calories_kcal": 325,
+      "protein_g": 40,
+      "saturated_fat_g": 1.5,
+      "unsaturated_fat_g": 5.5,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "fresh-yeast",
+    "name": "fresh yeast",
+    "category": "leavening",
+    "hydration_factor": 0.7,
+    "sourdough": "alternative",
+    "typical_usage_pct": "1-5",
+    "function": [
+      "leavening"
+    ],
+    "impact": [
+      "fermentation_speed"
+    ],
+    "nutrition_per_100g": {
+      "calories_kcal": 105,
+      "protein_g": 8,
+      "saturated_fat_g": 0.2,
+      "unsaturated_fat_g": 0.8,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "salt",
+    "name": "salt",
+    "category": "basic",
+    "hydration_factor": 0,
+    "sourdough": "essential",
+    "typical_usage_pct": "1.8-2.2",
+    "function": [
+      "flavor",
+      "gluten_strengthening"
+    ],
+    "impact": [
+      "gluten",
+      "fermentation_control"
+    ],
+    "nutrition_per_100g": {
+      "calories_kcal": 0,
+      "protein_g": 0,
+      "saturated_fat_g": 0,
+      "unsaturated_fat_g": 0,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "sugar",
+    "name": "sugar",
+    "category": "sweetener",
+    "hydration_factor": 0,
+    "sourdough": "optional",
+    "typical_usage_pct": "0-10",
+    "function": [
+      "sweetness",
+      "yeast_food"
+    ],
+    "impact": [
+      "fermentation_speed",
+      "browning"
+    ],
+    "nutrition_per_100g": {
+      "calories_kcal": 400,
+      "protein_g": 0,
+      "saturated_fat_g": 0,
+      "unsaturated_fat_g": 0,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "honey",
+    "name": "honey",
+    "category": "sweetener",
+    "hydration_factor": 0.2,
+    "sourdough": "well-suited",
+    "typical_usage_pct": "0-10",
+    "function": [
+      "sweetness",
+      "moisture",
+      "flavor"
+    ],
+    "impact": [
+      "moisture",
+      "browning",
+      "fermentation"
+    ],
+    "nutrition_per_100g": {
+      "calories_kcal": 304,
+      "protein_g": 0.3,
+      "saturated_fat_g": 0,
+      "unsaturated_fat_g": 0,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "maple-syrup",
+    "name": "maple syrup",
+    "category": "sweetener",
+    "hydration_factor": 0.33,
+    "sourdough": "well-suited",
+    "typical_usage_pct": "0-10",
+    "function": [
+      "sweetness",
+      "flavor"
+    ],
+    "impact": [
+      "moisture",
+      "browning"
+    ],
+    "nutrition_per_100g": {
+      "calories_kcal": 260,
+      "protein_g": 0,
+      "saturated_fat_g": 0,
+      "unsaturated_fat_g": 0,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "butter",
+    "name": "butter",
+    "category": "fat",
+    "hydration_factor": 0.15,
+    "sourdough": "possible",
+    "typical_usage_pct": "0-15",
+    "function": [
+      "softness",
+      "flavor"
+    ],
+    "impact": [
+      "crumb_softness",
+      "shelf_life"
+    ],
+    "nutrition_per_100g": {
+      "calories_kcal": 717,
+      "protein_g": 1,
+      "saturated_fat_g": 51,
+      "unsaturated_fat_g": 30,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "sunflower-oil",
+    "name": "sunflower oil",
+    "category": "fat",
+    "hydration_factor": 0,
+    "sourdough": "possible",
+    "typical_usage_pct": "0-10",
+    "function": [
+      "softness"
+    ],
+    "impact": [
+      "crumb_softness",
+      "shelf_life"
+    ],
+    "nutrition_per_100g": {
+      "calories_kcal": 884,
+      "protein_g": 0,
+      "saturated_fat_g": 10,
+      "unsaturated_fat_g": 90,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "aniseed",
+    "name": "aniseed",
+    "category": "spice",
+    "hydration_factor": 0,
+    "sourdough": "well-suited",
+    "typical_usage_pct": "0.1-1",
+    "function": [
+      "flavor"
+    ],
+    "impact": [
+      "aroma"
+    ],
+    "nutrition_per_100g": {
+      "calories_kcal": 337,
+      "protein_g": 18,
+      "saturated_fat_g": 0.6,
+      "unsaturated_fat_g": 15.4,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "coriander-seeds",
+    "name": "coriander seeds",
+    "category": "spice",
+    "hydration_factor": 0,
+    "sourdough": "well-suited",
+    "typical_usage_pct": "0.1-1",
+    "function": [
+      "flavor"
+    ],
+    "impact": [
+      "aroma"
+    ],
+    "nutrition_per_100g": {
+      "calories_kcal": 298,
+      "protein_g": 12,
+      "saturated_fat_g": 1,
+      "unsaturated_fat_g": 17,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "cumin",
+    "name": "cumin",
+    "category": "spice",
+    "hydration_factor": 0,
+    "sourdough": "well-suited",
+    "typical_usage_pct": "0.1-1",
+    "function": [
+      "flavor"
+    ],
+    "impact": [
+      "aroma"
+    ],
+    "nutrition_per_100g": {
+      "calories_kcal": 375,
+      "protein_g": 18,
+      "saturated_fat_g": 1.5,
+      "unsaturated_fat_g": 20.5,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "fennel-seeds",
+    "name": "fennel seeds",
+    "category": "spice",
+    "hydration_factor": 0,
+    "sourdough": "well-suited",
+    "typical_usage_pct": "0.1-1",
+    "function": [
+      "flavor"
+    ],
+    "impact": [
+      "aroma"
+    ],
+    "nutrition_per_100g": {
+      "calories_kcal": 345,
+      "protein_g": 16,
+      "saturated_fat_g": 0.5,
+      "unsaturated_fat_g": 14.5,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "pumpkin-seeds",
+    "name": "pumpkin seeds",
+    "category": "seeds",
+    "hydration_factor": 0.1,
+    "sourdough": "well-suited",
+    "typical_usage_pct": "5-20",
+    "function": [
+      "texture",
+      "flavor",
+      "nutrition"
+    ],
+    "impact": [
+      "structure"
+    ],
+    "nutrition_per_100g": {
+      "calories_kcal": 559,
+      "protein_g": 30,
+      "saturated_fat_g": 8.7,
+      "unsaturated_fat_g": 40.3,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "sunflower-seeds",
+    "name": "sunflower seeds",
+    "category": "seeds",
+    "hydration_factor": 0.1,
+    "sourdough": "well-suited",
+    "typical_usage_pct": "5-20",
+    "function": [
+      "texture",
+      "flavor",
+      "nutrition"
+    ],
+    "impact": [
+      "structure"
+    ],
+    "nutrition_per_100g": {
+      "calories_kcal": 584,
+      "protein_g": 21,
+      "saturated_fat_g": 4.5,
+      "unsaturated_fat_g": 46.5,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "flaxseed",
+    "name": "flaxseed",
+    "category": "seeds",
+    "hydration_factor": 1.5,
+    "sourdough": "well-suited",
+    "typical_usage_pct": "2-10",
+    "function": [
+      "binding",
+      "nutrition"
+    ],
+    "impact": [
+      "water_binding",
+      "crumb_softness"
+    ],
+    "nutrition_per_100g": {
+      "calories_kcal": 534,
+      "protein_g": 18,
+      "saturated_fat_g": 3.7,
+      "unsaturated_fat_g": 38.3,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "ground-flaxseed",
+    "name": "ground flaxseed",
+    "category": "seeds",
+    "hydration_factor": 2,
+    "sourdough": "well-suited",
+    "typical_usage_pct": "2-10",
+    "function": [
+      "binding",
+      "moisture"
+    ],
+    "impact": [
+      "water_binding",
+      "crumb_softness"
+    ],
+    "nutrition_per_100g": {
+      "calories_kcal": 534,
+      "protein_g": 18,
+      "saturated_fat_g": 3.7,
+      "unsaturated_fat_g": 38.3,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "chia-seeds",
+    "name": "chia seeds",
+    "category": "seeds",
+    "hydration_factor": 2.5,
+    "sourdough": "well-suited",
+    "typical_usage_pct": "2-10",
+    "function": [
+      "binding",
+      "moisture"
+    ],
+    "impact": [
+      "water_binding",
+      "gel_structure"
+    ],
+    "nutrition_per_100g": {
+      "calories_kcal": 486,
+      "protein_g": 17,
+      "saturated_fat_g": 3.3,
+      "unsaturated_fat_g": 27.7,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "olive-oil",
+    "name": "olive oil",
+    "category": "fat",
+    "hydration_factor": 0,
+    "sourdough": "possible",
+    "typical_usage_pct": "0-10",
+    "function": [
+      "softness",
+      "flavor"
+    ],
+    "impact": [
+      "crumb_softness",
+      "shelf_life",
+      "aroma"
+    ],
+    "nutrition_per_100g": {
+      "calories_kcal": 884,
+      "protein_g": 0,
+      "saturated_fat_g": 14,
+      "unsaturated_fat_g": 86,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "sesame-oil",
+    "name": "sesame oil",
+    "category": "fat",
+    "hydration_factor": 0,
+    "sourdough": "possible",
+    "typical_usage_pct": "0-8",
+    "function": [
+      "softness",
+      "flavor"
+    ],
+    "impact": [
+      "crumb_softness",
+      "shelf_life",
+      "aroma"
+    ],
+    "nutrition_per_100g": {
+      "calories_kcal": 884,
+      "protein_g": 0,
+      "saturated_fat_g": 14,
+      "unsaturated_fat_g": 86,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "pumpkin-seed-oil",
+    "name": "pumpkin seed oil",
+    "category": "fat",
+    "hydration_factor": 0,
+    "sourdough": "possible",
+    "typical_usage_pct": "0-8",
+    "function": [
+      "softness",
+      "flavor"
+    ],
+    "impact": [
+      "crumb_softness",
+      "shelf_life",
+      "aroma"
+    ],
+    "nutrition_per_100g": {
+      "calories_kcal": 884,
+      "protein_g": 0,
+      "saturated_fat_g": 18,
+      "unsaturated_fat_g": 82,
+      "fiber_g": 0
+    }
+  },
+  {
+    "id": "walnut",
+    "name": "Walnut",
+    "category": "nuts",
+    "hydration_factor": 0.05,
+    "typical_usage_pct": "10-30",
+    "function": [
+      "flavor",
+      "texture"
+    ],
+    "impact": [
+      "browning",
+      "aroma"
+    ],
+    "nutrition_per_100g": {
+      "calories_kcal": 654,
+      "protein_g": 15.2,
+      "fat_g": 65.2,
+      "fiber_g": 6.7,
+      "saturated_fat_g": 0,
+      "unsaturated_fat_g": 0
+    }
+  },
+  {
+    "id": "sesam",
+    "name": "Sesam",
+    "category": "seeds",
+    "hydration_factor": 0.3,
+    "sourdough": "well-suited",
+    "typical_usage_pct": "5-15",
+    "function": [
+      "flavor",
+      "moisture",
+      "softness",
+      "texture"
+    ],
+    "impact": [
+      "moisture",
+      "browning",
+      "crumb_softness",
+      "shelf_life",
+      "water_binding",
+      "aroma"
+    ],
+    "nutrition_per_100g": {
+      "calories_kcal": 580,
+      "protein_g": 19,
+      "saturated_fat_g": 7,
+      "unsaturated_fat_g": 41,
+      "fiber_g": 13
+    }
+  },
+  {
+    "id": "sauerteig-fluessig",
+    "name": "Sauerteig (Flüssig)",
+    "category": "leavening",
+    "hydration_factor": 1,
+    "sourdough": "essential",
+    "typical_usage_pct": "10-30",
+    "function": [
+      "leavening",
+      "acidification",
+      "flavor",
+      "yeast_food",
+      "moisture",
+      "gluten_strengthening"
+    ],
+    "impact": [
+      "fermentation_speed",
+      "gluten",
+      "browning",
+      "shelf_life"
+    ],
+    "nutrition_per_100g": {
+      "calories_kcal": 140,
+      "protein_g": 5,
+      "saturated_fat_g": 0.1,
+      "unsaturated_fat_g": 0.8,
+      "fiber_g": 5
+    }
+  }
+]

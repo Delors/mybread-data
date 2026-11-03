@@ -1,0 +1,22 @@
+{
+  "name": "mybread-data",
+  "version": "1.0.0",
+  "description": "Recipe data repository for MyBread. Source of truth for recipes, ingredients, and images. Published as data.json via GitHub Pages.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.js",
+    "build": "node scripts/build-data.js",
+    "export": "node scripts/export-from-mongo.js"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "dotenv": "^16.4.5",
+    "mongoose": "^8.14.0",
+    "sharp": "^0.34.5"
+  }
+}

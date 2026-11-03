@@ -1,0 +1,76 @@
+{
+  "id": "buttermilchbrot",
+  "title": "Buttermilchbrot",
+  "description": "Feines Buttermilchbrot",
+  "language": "de-DE",
+  "author": "Michael Eichberg",
+  "tags": [
+    "buttermilk",
+    "spelt"
+  ],
+  "flours": [
+    {
+      "ingredient": "wholemeal-spelt-flour",
+      "amount_g": 500
+    }
+  ],
+  "liquids": [
+    {
+      "ingredient": "buttermilk",
+      "amount": 500,
+      "unit": "ml"
+    },
+    {
+      "ingredient": "vinegar",
+      "amount": 15,
+      "unit": "ml"
+    }
+  ],
+  "other_ingredients": [
+    {
+      "ingredient": "salt",
+      "amount": 5,
+      "unit": "g"
+    },
+    {
+      "ingredient": "dried-yeast",
+      "amount": 7,
+      "unit": "g"
+    }
+  ],
+  "steps": [
+    {
+      "order": 1,
+      "description": "Salz, Buttermilch, Essig in das Backgefäß geben. Danach Mehl und zuletzt die Hefe.",
+      "duration_min": 5
+    },
+    {
+      "order": 2,
+      "description": "- Programm 3\n- 1000g\n- Bräunungsgrad 3",
+      "duration_min": 195
+    }
+  ],
+  "step_sets": [
+    {
+      "category": "bread-maker-gastroback-design-advanced",
+      "steps": [
+        {
+          "order": 1,
+          "description": "Salz, Buttermilch, Essig in das Backgefäß geben. Danach Mehl und zuletzt die Hefe.",
+          "duration_min": 5
+        },
+        {
+          "order": 2,
+          "description": "- Programm 3\n- 1000g\n- Bräunungsgrad 3",
+          "duration_min": 195
+        }
+      ]
+    }
+  ],
+  "images": [
+    "images/recipes/buttermilchbrot/1.webp",
+    "images/recipes/buttermilchbrot/2.webp"
+  ],
+  "created_at": "2026-05-09T11:46:32.718Z",
+  "updated_at": "2026-05-10T06:41:55.400Z"
+}

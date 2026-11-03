@@ -1,0 +1,93 @@
+{
+  "id": "einfaches-emmer-vollkornbrot",
+  "title": "Einfaches Emmer Vollkornbrot",
+  "description": "Ein einfaches und schnelles Emmer Sauerteig-Vollkornbrot",
+  "language": "de-DE",
+  "author": "Michael Eichberg",
+  "tags": [
+    "wholemeal",
+    "emmer",
+    "sourdough"
+  ],
+  "flours": [
+    {
+      "ingredient": "emmer-flour",
+      "amount_g": 500
+    }
+  ],
+  "liquids": [
+    {
+      "ingredient": "water",
+      "amount": 300,
+      "unit": "ml"
+    }
+  ],
+  "other_ingredients": [
+    {
+      "ingredient": "salt",
+      "amount": 10,
+      "unit": "g"
+    },
+    {
+      "ingredient": "dried-yeast",
+      "amount": 10,
+      "unit": "g"
+    },
+    {
+      "ingredient": "sauerteig-fluessig",
+      "amount": 75,
+      "unit": "g"
+    }
+  ],
+  "steps": [
+    {
+      "order": 1,
+      "description": "Erst das Wasser und den Sauerteig und das Salz in das Brotbackgefäß geben.",
+      "duration_min": 3
+    },
+    {
+      "order": 2,
+      "description": "Mehl hinzufügen",
+      "duration_min": 1
+    },
+    {
+      "order": 3,
+      "description": "Trockenhefe als letztes hinzufügen",
+      "duration_min": 1
+    },
+    {
+      "order": 4,
+      "description": "Backen mit dem Programm 4, 750g, Bräunungsgrad 3",
+      "duration_min": 255
+    }
+  ],
+  "step_sets": [
+    {
+      "category": "bread-maker-gastroback-design-advanced",
+      "steps": [
+        {
+          "order": 1,
+          "description": "Erst das Wasser und den Sauerteig und das Salz in das Brotbackgefäß geben.",
+          "duration_min": 3
+        },
+        {
+          "order": 2,
+          "description": "Mehl hinzufügen",
+          "duration_min": 1
+        },
+        {
+          "order": 3,
+          "description": "Trockenhefe als letztes hinzufügen",
+          "duration_min": 1
+        },
+        {
+          "order": 4,
+          "description": "Backen mit dem Programm 4, 750g, Bräunungsgrad 3",
+          "duration_min": 255
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-05-12T06:27:08.382Z",
+  "updated_at": "2026-05-12T06:39:32.109Z"
+}

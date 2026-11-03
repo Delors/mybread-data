@@ -1,0 +1,99 @@
+{
+  "id": "dunkles-walnussbrot",
+  "title": "Dunkles Walnussbrot",
+  "description": "Ein auf Vollkornmehl basierendes Brot mit Walnüssen und Walnussmehl.",
+  "language": "de-DE",
+  "author": "Michael Eichberg",
+  "tags": [
+    "sourdough",
+    "rye"
+  ],
+  "flours": [
+    {
+      "ingredient": "walnussmehl",
+      "amount_g": 50
+    },
+    {
+      "ingredient": "rye-flour-type-1150",
+      "amount_g": 250
+    },
+    {
+      "ingredient": "wholemeal-spelt-flour",
+      "amount_g": 200
+    }
+  ],
+  "liquids": [
+    {
+      "ingredient": "water",
+      "amount": 375,
+      "unit": "ml"
+    }
+  ],
+  "other_ingredients": [
+    {
+      "ingredient": "sourdough-starter",
+      "amount": 10,
+      "unit": "g"
+    },
+    {
+      "ingredient": "maple-syrup",
+      "amount": 5,
+      "unit": "g"
+    },
+    {
+      "ingredient": "dried-yeast",
+      "amount": 7,
+      "unit": "g"
+    },
+    {
+      "ingredient": "salt",
+      "amount": 5,
+      "unit": "g"
+    },
+    {
+      "ingredient": "dried-yeast",
+      "amount": 7,
+      "unit": "g"
+    },
+    {
+      "ingredient": "walnut",
+      "amount": 150,
+      "unit": "g"
+    }
+  ],
+  "steps": [
+    {
+      "order": 1,
+      "description": "geben Sie alles in eine Backform in der folgenden Reihenfolge: \n\n1. Flüssigkeiten und Gewürze:\n  \n    - Wasser\n    - Salz\n    - Ahornsirup\n2. Mehl\n3. Trockenhefe",
+      "duration_min": 5
+    },
+    {
+      "order": 2,
+      "description": "baking - Programm 4 - 1kg, starke own burning color",
+      "duration_min": 195
+    }
+  ],
+  "step_sets": [
+    {
+      "category": "bread-maker-gastroback-design-advanced",
+      "steps": [
+        {
+          "order": 1,
+          "description": "geben Sie alles in eine Backform in der folgenden Reihenfolge: \n\n1. Flüssigkeiten und Gewürze:\n  \n    - Wasser\n    - Salz\n    - Ahornsirup\n2. Mehl\n3. Trockenhefe",
+          "duration_min": 5
+        },
+        {
+          "order": 2,
+          "description": "baking - Programm 4 - 1kg, starke own burning color",
+          "duration_min": 195
+        }
+      ]
+    }
+  ],
+  "images": [
+    "images/recipes/dunkles-walnussbrot/1.webp",
+    "images/recipes/dunkles-walnussbrot/2.webp"
+  ],
+  "created_at": "2026-03-26T12:00:27.507Z",
+  "updated_at": "2026-05-09T11:14:02.935Z"
+}

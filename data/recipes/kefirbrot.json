@@ -1,0 +1,65 @@
+{
+  "id": "kefirbrot",
+  "title": "Kefirbrot",
+  "description": "Fluffigess Kefirbrot",
+  "language": "de-DE",
+  "author": "Michael Eichberg",
+  "tags": [
+    "kefir"
+  ],
+  "flours": [
+    {
+      "ingredient": "wheat-flour-type-1050",
+      "amount_g": 400
+    },
+    {
+      "ingredient": "emmer-flour",
+      "amount_g": 120
+    }
+  ],
+  "liquids": [
+    {
+      "ingredient": "kefir-1-5-fett",
+      "amount": 500,
+      "unit": "ml"
+    },
+    {
+      "ingredient": "vinegar",
+      "amount": 15,
+      "unit": "ml"
+    }
+  ],
+  "other_ingredients": [
+    {
+      "ingredient": "salt",
+      "amount": 10,
+      "unit": "g"
+    },
+    {
+      "ingredient": "dried-yeast",
+      "amount": 7,
+      "unit": "g"
+    }
+  ],
+  "steps": [
+    {
+      "order": 1,
+      "description": "Alles rein und los geht es.",
+      "duration_min": 5
+    }
+  ],
+  "step_sets": [
+    {
+      "category": "bread-maker-gastroback-design-advanced",
+      "steps": [
+        {
+          "order": 1,
+          "description": "Alles rein und los geht es.",
+          "duration_min": 5
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-05-10T07:39:58.347Z",
+  "updated_at": "2026-05-11T08:17:53.714Z"
+}

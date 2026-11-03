@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ingredient.schema.json",
+  "title": "MyBread Ingredient Catalog File",
+  "description": "An array of ingredients. Used for data/ingredients/flours.json, liquids.json, and baking.json.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "name"],
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Unique slug across all ingredient files.",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+        "maxLength": 120
+      },
+      "name": { "type": "string", "minLength": 1, "maxLength": 120 },
+      "category": { "type": "string", "maxLength": 60 },
+      "gluten": { "type": "string", "maxLength": 40 },
+      "hydration": { "type": "string", "maxLength": 40 },
+      "hydration_factor": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 5,
+        "description": "Water binding factor; may exceed 1 for strongly hydrophilic ingredients (e.g. chia seeds)."
+      },
+      "sourdough": { "type": "string", "maxLength": 40 },
+      "acidity": { "type": "string", "maxLength": 40 },
+      "fat_content": { "type": "string", "maxLength": 40 },
+      "typical_usage_pct": { "type": "string", "maxLength": 40 },
+      "function": { "type": "array", "items": { "type": "string", "maxLength": 60 } },
+      "impact": { "type": "array", "items": { "type": "string", "maxLength": 60 } },
+      "nutrition_per_100g": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "calories_kcal": { "type": "number", "minimum": 0 },
+          "protein_g": { "type": "number", "minimum": 0 },
+          "fat_g": { "type": "number", "minimum": 0 },
+          "saturated_fat_g": { "type": "number", "minimum": 0 },
+          "unsaturated_fat_g": { "type": "number", "minimum": 0 },
+          "fiber_g": { "type": "number", "minimum": 0 }
+        }
+      }
+    }
+  }
+}

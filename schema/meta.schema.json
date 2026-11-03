@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "meta.schema.json",
+  "title": "MyBread Meta Files",
+  "description": "Schemas for data/meta/step-categories.json and data/meta/hero-images.json.",
+  "$defs": {
+    "stepCategories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "maxLength": 120 },
+          "name": { "type": "string", "minLength": 1, "maxLength": 120 }
+        }
+      }
+    },
+    "heroImages": {
+      "type": "array",
+      "maxItems": 50,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["url"],
+        "properties": {
+          "url": {
+            "type": "string",
+            "description": "Absolute URL or repo-relative path (resolved against the data CDN base).",
+            "maxLength": 500
+          },
+          "copyright": {
+            "type": "string",
+            "description": "Plain-text attribution.",
+            "maxLength": 500
+          },
+          "copyright_html": {
+            "type": "string",
+            "description": "Attribution with HTML links (used by the web client).",
+            "maxLength": 2000
+          }
+        }
+      }
+    }
+  }
+}

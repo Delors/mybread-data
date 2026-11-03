@@ -1,0 +1,390 @@
+[
+  {
+    "id": "wheat-flour-type-405",
+    "name": "wheat flour Type 405",
+    "category": "wheat",
+    "gluten": "medium",
+    "hydration": "medium",
+    "hydration_factor": 0.62,
+    "sourdough": "possible",
+    "typical_usage_pct": "0-100",
+    "nutrition_per_100g": {
+      "calories_kcal": 340,
+      "protein_g": 10,
+      "saturated_fat_g": 0.2,
+      "unsaturated_fat_g": 0.8,
+      "fiber_g": 3
+    }
+  },
+  {
+    "id": "wheat-flour-type-550",
+    "name": "wheat flour Type 550",
+    "category": "wheat",
+    "gluten": "high",
+    "hydration": "medium",
+    "hydration_factor": 0.65,
+    "sourdough": "well-suited",
+    "typical_usage_pct": "0-100",
+    "nutrition_per_100g": {
+      "calories_kcal": 340,
+      "protein_g": 11,
+      "saturated_fat_g": 0.2,
+      "unsaturated_fat_g": 1,
+      "fiber_g": 3.5
+    }
+  },
+  {
+    "id": "wheat-flour-type-1050",
+    "name": "wheat flour Type 1050",
+    "category": "wheat",
+    "gluten": "high",
+    "hydration": "medium-high",
+    "hydration_factor": 0.72,
+    "sourdough": "well-suited",
+    "typical_usage_pct": "0-100",
+    "nutrition_per_100g": {
+      "calories_kcal": 335,
+      "protein_g": 12,
+      "saturated_fat_g": 0.3,
+      "unsaturated_fat_g": 1.5,
+      "fiber_g": 7
+    }
+  },
+  {
+    "id": "wholemeal-wheat-flour",
+    "name": "wholemeal wheat flour",
+    "category": "wheat",
+    "gluten": "high",
+    "hydration": "high",
+    "hydration_factor": 0.8,
+    "sourdough": "well-suited",
+    "typical_usage_pct": "20-100",
+    "nutrition_per_100g": {
+      "calories_kcal": 330,
+      "protein_g": 13,
+      "saturated_fat_g": 0.4,
+      "unsaturated_fat_g": 2.1,
+      "fiber_g": 10
+    }
+  },
+  {
+    "id": "spelt-flour-type-630",
+    "name": "spelt flour Type 630",
+    "category": "spelt",
+    "gluten": "medium",
+    "hydration": "medium",
+    "hydration_factor": 0.65,
+    "sourdough": "well-suited",
+    "typical_usage_pct": "0-100",
+    "nutrition_per_100g": {
+      "calories_kcal": 338,
+      "protein_g": 12,
+      "saturated_fat_g": 0.3,
+      "unsaturated_fat_g": 1.5,
+      "fiber_g": 4
+    }
+  },
+  {
+    "id": "wholemeal-spelt-flour",
+    "name": "wholemeal spelt flour",
+    "category": "spelt",
+    "gluten": "medium",
+    "hydration": "high",
+    "hydration_factor": 0.78,
+    "sourdough": "well-suited",
+    "typical_usage_pct": "20-100",
+    "nutrition_per_100g": {
+      "calories_kcal": 330,
+      "protein_g": 14,
+      "saturated_fat_g": 0.4,
+      "unsaturated_fat_g": 2.1,
+      "fiber_g": 10
+    }
+  },
+  {
+    "id": "rye-flour-type-1150",
+    "name": "rye flour Type 1150",
+    "category": "rye",
+    "gluten": "low",
+    "hydration": "high",
+    "hydration_factor": 0.78,
+    "sourdough": "essential",
+    "typical_usage_pct": "20-80",
+    "nutrition_per_100g": {
+      "calories_kcal": 335,
+      "protein_g": 9,
+      "saturated_fat_g": 0.2,
+      "unsaturated_fat_g": 1.3,
+      "fiber_g": 8
+    }
+  },
+  {
+    "id": "wholemeal-rye-flour",
+    "name": "wholemeal rye flour",
+    "category": "rye",
+    "gluten": "low",
+    "hydration": "very_high",
+    "hydration_factor": 0.85,
+    "sourdough": "essential",
+    "typical_usage_pct": "30-100",
+    "nutrition_per_100g": {
+      "calories_kcal": 325,
+      "protein_g": 10,
+      "saturated_fat_g": 0.3,
+      "unsaturated_fat_g": 1.7,
+      "fiber_g": 13
+    }
+  },
+  {
+    "id": "einkorn-flour",
+    "name": "einkorn flour",
+    "category": "ancient_grains",
+    "gluten": "low",
+    "hydration": "medium",
+    "hydration_factor": 0.65,
+    "sourdough": "well-suited",
+    "typical_usage_pct": "10-50",
+    "nutrition_per_100g": {
+      "calories_kcal": 340,
+      "protein_g": 15,
+      "saturated_fat_g": 0.4,
+      "unsaturated_fat_g": 2.1,
+      "fiber_g": 9
+    }
+  },
+  {
+    "id": "emmer-flour",
+    "name": "emmer flour",
+    "category": "ancient_grains",
+    "gluten": "medium",
+    "hydration": "medium-high",
+    "hydration_factor": 0.7,
+    "sourdough": "well-suited",
+    "typical_usage_pct": "10-60",
+    "nutrition_per_100g": {
+      "calories_kcal": 338,
+      "protein_g": 13,
+      "saturated_fat_g": 0.4,
+      "unsaturated_fat_g": 2.1,
+      "fiber_g": 9
+    }
+  },
+  {
+    "id": "barley-flour",
+    "name": "barley flour",
+    "category": "other_cereals",
+    "gluten": "low",
+    "hydration": "medium",
+    "hydration_factor": 0.75,
+    "sourdough": "possible",
+    "typical_usage_pct": "10-40",
+    "nutrition_per_100g": {
+      "calories_kcal": 330,
+      "protein_g": 10,
+      "saturated_fat_g": 0.3,
+      "unsaturated_fat_g": 1.5,
+      "fiber_g": 15
+    }
+  },
+  {
+    "id": "oat-flour",
+    "name": "oat flour",
+    "category": "other_cereals",
+    "gluten": "none",
+    "hydration": "high",
+    "hydration_factor": 0.8,
+    "sourdough": "possible",
+    "typical_usage_pct": "10-30",
+    "nutrition_per_100g": {
+      "calories_kcal": 390,
+      "protein_g": 17,
+      "saturated_fat_g": 1.2,
+      "unsaturated_fat_g": 5.5,
+      "fiber_g": 10
+    }
+  },
+  {
+    "id": "cornmeal",
+    "name": "cornmeal",
+    "category": "other_cereals",
+    "gluten": "none",
+    "hydration": "medium",
+    "hydration_factor": 0.7,
+    "sourdough": "not typical",
+    "typical_usage_pct": "10-50",
+    "nutrition_per_100g": {
+      "calories_kcal": 365,
+      "protein_g": 9,
+      "saturated_fat_g": 0.5,
+      "unsaturated_fat_g": 3.3,
+      "fiber_g": 7
+    }
+  },
+  {
+    "id": "buckwheat-flour",
+    "name": "buckwheat flour",
+    "category": "pseudocereals",
+    "gluten": "none",
+    "hydration": "high",
+    "hydration_factor": 0.8,
+    "sourdough": "well-suited",
+    "typical_usage_pct": "10-40",
+    "nutrition_per_100g": {
+      "calories_kcal": 343,
+      "protein_g": 13,
+      "saturated_fat_g": 0.6,
+      "unsaturated_fat_g": 2.5,
+      "fiber_g": 10
+    }
+  },
+  {
+    "id": "quinoa-flour",
+    "name": "quinoa flour",
+    "category": "pseudocereals",
+    "gluten": "none",
+    "hydration": "medium",
+    "hydration_factor": 0.75,
+    "sourdough": "possible",
+    "typical_usage_pct": "10-30",
+    "nutrition_per_100g": {
+      "calories_kcal": 368,
+      "protein_g": 14,
+      "saturated_fat_g": 0.6,
+      "unsaturated_fat_g": 5.4,
+      "fiber_g": 7
+    }
+  },
+  {
+    "id": "chickpea-flour",
+    "name": "chickpea flour",
+    "category": "legumes",
+    "gluten": "none",
+    "hydration": "medium",
+    "hydration_factor": 0.85,
+    "sourdough": "not typical",
+    "typical_usage_pct": "5-25",
+    "nutrition_per_100g": {
+      "calories_kcal": 387,
+      "protein_g": 22,
+      "saturated_fat_g": 0.6,
+      "unsaturated_fat_g": 5.4,
+      "fiber_g": 10
+    }
+  },
+  {
+    "id": "soy-flour",
+    "name": "soy flour",
+    "category": "legumes",
+    "gluten": "none",
+    "hydration": "medium",
+    "hydration_factor": 0.8,
+    "sourdough": "not typical",
+    "typical_usage_pct": "5-15",
+    "nutrition_per_100g": {
+      "calories_kcal": 400,
+      "protein_g": 36,
+      "saturated_fat_g": 3,
+      "unsaturated_fat_g": 17,
+      "fiber_g": 9
+    }
+  },
+  {
+    "id": "rice-flour",
+    "name": "rice flour",
+    "category": "specialty",
+    "gluten": "none",
+    "hydration": "medium",
+    "hydration_factor": 0.75,
+    "sourdough": "possible",
+    "typical_usage_pct": "10-100",
+    "nutrition_per_100g": {
+      "calories_kcal": 365,
+      "protein_g": 7,
+      "saturated_fat_g": 0.3,
+      "unsaturated_fat_g": 1,
+      "fiber_g": 2
+    }
+  },
+  {
+    "id": "potato-starch",
+    "name": "potato starch",
+    "category": "specialty",
+    "gluten": "none",
+    "hydration": "very_high",
+    "hydration_factor": 0.85,
+    "sourdough": "not typical",
+    "typical_usage_pct": "5-20",
+    "nutrition_per_100g": {
+      "calories_kcal": 330,
+      "protein_g": 0,
+      "saturated_fat_g": 0,
+      "unsaturated_fat_g": 0,
+      "fiber_g": 1
+    }
+  },
+  {
+    "id": "almond-flour",
+    "name": "almond flour",
+    "category": "specialty",
+    "gluten": "none",
+    "hydration": "low",
+    "hydration_factor": 0.4,
+    "sourdough": "not typical",
+    "typical_usage_pct": "5-30",
+    "nutrition_per_100g": {
+      "calories_kcal": 575,
+      "protein_g": 21,
+      "saturated_fat_g": 4,
+      "unsaturated_fat_g": 46,
+      "fiber_g": 12
+    }
+  },
+  {
+    "id": "walnussmehl",
+    "name": "Walnussmehl",
+    "category": "specialty",
+    "hydration_factor": 0,
+    "nutrition_per_100g": {
+      "calories_kcal": 361,
+      "protein_g": 45.7,
+      "fat_g": 10.4,
+      "fiber_g": 18.7,
+      "saturated_fat_g": 0,
+      "unsaturated_fat_g": 0
+    }
+  },
+  {
+    "id": "roggenschrot",
+    "name": "Roggenschrot",
+    "category": "rye",
+    "gluten": "low",
+    "hydration": "high",
+    "hydration_factor": 0,
+    "sourdough": "essential",
+    "typical_usage_pct": "20",
+    "nutrition_per_100g": {
+      "calories_kcal": 325,
+      "protein_g": 9,
+      "saturated_fat_g": 0.3,
+      "unsaturated_fat_g": 1.4,
+      "fiber_g": 13
+    }
+  },
+  {
+    "id": "kartoffelmehl",
+    "name": "Kartoffelmehl",
+    "category": "specialty",
+    "gluten": "low",
+    "hydration": "medium-high",
+    "hydration_factor": 0,
+    "sourdough": "not typical",
+    "typical_usage_pct": "10-100",
+    "nutrition_per_100g": {
+      "calories_kcal": 330,
+      "protein_g": 0.75,
+      "saturated_fat_g": 0,
+      "unsaturated_fat_g": 0,
+      "fiber_g": 0.5
+    }
+  }
+]

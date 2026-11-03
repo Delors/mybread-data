@@ -1,0 +1,242 @@
+{
+  "rules": [
+    {
+      "id": "rye_requires_acidity",
+      "severity": "warning",
+      "condition": {
+        "flour_category_pct": {
+          "category": "rye",
+          "min": 50
+        }
+      },
+      "action": {
+        "require": ["acidic_liquid_or_sourdough"],
+        "message": "High rye content requires acidity for structure."
+      }
+    },
+    {
+      "id": "wholemeal_needs_more_water",
+      "severity": "info",
+      "condition": {
+        "flour_property_pct": {
+          "property": "wholemeal",
+          "min": 50
+        }
+      },
+      "action": {
+        "adjust_hydration_pct": 10,
+        "message": "Wholemeal flour increases water absorption."
+      }
+    },
+    {
+      "id": "seeds_increase_hydration",
+      "severity": "info",
+      "condition": {
+        "ingredient_category_pct": {
+          "category": "seeds",
+          "min": 15
+        }
+      },
+      "action": {
+        "adjust_hydration_pct": 5,
+        "message": "Seeds bind water and require higher hydration."
+      }
+    },
+    {
+      "id": "flaxseed_strong_binding",
+      "severity": "info",
+      "condition": {
+        "ingredient_name_pct": {
+          "name": "flaxseed",
+          "min": 5
+        }
+      },
+      "action": {
+        "adjust_hydration_pct": 5,
+        "message": "Flaxseed strongly binds water."
+      }
+    },
+    {
+      "id": "fat_softens_dough",
+      "severity": "info",
+      "condition": {
+        "ingredient_category_pct": {
+          "category": "fat",
+          "min": 10
+        }
+      },
+      "action": {
+        "effect": "softer_crumb",
+        "message": "High fat content softens crumb and reduces gluten strength."
+      }
+    },
+    {
+      "id": "low_gluten_requires_support",
+      "severity": "warning",
+      "condition": {
+        "flour_gluten_avg": {
+          "max": "low"
+        }
+      },
+      "action": {
+        "suggest": ["add_wheat_flour", "use_sourdough"],
+        "message": "Low gluten dough benefits from structural support."
+      }
+    },
+
+    {
+      "id": "salt_missing",
+      "severity": "error",
+      "condition": {
+        "ingredient_name_present": {
+          "name": "salt",
+          "present": false
+        }
+      },
+      "action": {
+        "message": "No salt detected. Salt is essential for flavour and gluten control; aim for ~2% of flour weight."
+      }
+    },
+    {
+      "id": "salt_low",
+      "severity": "warning",
+      "condition": {
+        "ingredient_name_pct_of_flour": {
+          "name": "salt",
+          "max": 1.5
+        }
+      },
+      "action": {
+        "message": "Salt is below 1.5% of flour. Bread will likely taste flat and over-ferment."
+      }
+    },
+    {
+      "id": "salt_high",
+      "severity": "warning",
+      "condition": {
+        "ingredient_name_pct_of_flour": {
+          "name": "salt",
+          "min": 2.5
+        }
+      },
+      "action": {
+        "message": "Salt above 2.5% of flour will inhibit yeast and slow fermentation noticeably."
+      }
+    },
+    {
+      "id": "leavening_missing",
+      "severity": "error",
+      "condition": {
+        "ingredient_category_present": {
+          "category": "leavening",
+          "present": false
+        }
+      },
+      "action": {
+        "message": "No leavening detected. Add yeast or sourdough starter; otherwise the loaf will not rise."
+      }
+    },
+    {
+      "id": "dry_yeast_high",
+      "severity": "warning",
+      "condition": {
+        "ingredient_name_pct_of_flour": {
+          "name": "dried yeast",
+          "min": 2
+        }
+      },
+      "action": {
+        "message": "Dry yeast above 2% of flour is excessive; the dough may over-proof and develop a yeasty taste."
+      }
+    },
+    {
+      "id": "fresh_yeast_high",
+      "severity": "warning",
+      "condition": {
+        "ingredient_name_pct_of_flour": {
+          "name": "fresh yeast",
+          "min": 5
+        }
+      },
+      "action": {
+        "message": "Fresh yeast above 5% of flour is excessive; the dough may over-proof."
+      }
+    },
+    {
+      "id": "hydration_extreme_low",
+      "severity": "warning",
+      "condition": {
+        "hydration_pct_range": {
+          "max": 50
+        }
+      },
+      "action": {
+        "message": "Total hydration below 50% will give a very stiff dough that is hard to develop."
+      }
+    },
+    {
+      "id": "hydration_extreme_high",
+      "severity": "warning",
+      "condition": {
+        "hydration_pct_range": {
+          "min": 100
+        }
+      },
+      "action": {
+        "message": "Total hydration above 100% is unusually wet and will be difficult to shape outside of a mould."
+      }
+    },
+    {
+      "id": "starter_low",
+      "severity": "info",
+      "condition": {
+        "ingredient_name_pct_of_flour": {
+          "name": "sourdough",
+          "max": 10
+        }
+      },
+      "action": {
+        "message": "Sourdough below ~10% of flour ferments slowly; expect long bulk times or weak rise."
+      }
+    },
+    {
+      "id": "starter_high",
+      "severity": "info",
+      "condition": {
+        "ingredient_name_pct_of_flour": {
+          "name": "sourdough",
+          "min": 30
+        }
+      },
+      "action": {
+        "message": "Sourdough above ~30% of flour ferments quickly and risks over-proofing."
+      }
+    },
+    {
+      "id": "fat_excessive",
+      "severity": "warning",
+      "condition": {
+        "ingredient_category_pct_of_flour": {
+          "category": "fat",
+          "min": 25
+        }
+      },
+      "action": {
+        "message": "Fat above 25% of flour will heavily coat gluten strands; structure may collapse without enriched-dough technique."
+      }
+    },
+    {
+      "id": "egg_rich",
+      "severity": "info",
+      "condition": {
+        "liquid_category_pct_of_flour": {
+          "category": "enriched",
+          "min": 15
+        }
+      },
+      "action": {
+        "message": "Egg-rich dough (>15% of flour). Treat as a brioche/challah: longer kneading, careful proofing."
+      }
+    }
+  ]
+}

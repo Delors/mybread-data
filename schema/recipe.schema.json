@@ -1,0 +1,162 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "recipe.schema.json",
+  "title": "MyBread Recipe",
+  "description": "A single bread recipe. One file per recipe under data/recipes/<id>.json. All amounts are stored in SI units: flours in grams, liquids in milliliters, other ingredients in grams.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "title", "author", "language", "flours"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique slug; must match the file name (without .json).",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "maxLength": 120
+    },
+    "title": { "type": "string", "minLength": 1, "maxLength": 200 },
+    "description": { "type": "string", "maxLength": 2000 },
+    "language": {
+      "type": "string",
+      "description": "BCP-47 language tag of the recipe text, e.g. de-DE or en-US.",
+      "pattern": "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$"
+    },
+    "author": {
+      "type": "string",
+      "description": "Free-text author name.",
+      "minLength": 1,
+      "maxLength": 60
+    },
+    "tags": {
+      "type": "array",
+      "maxItems": 20,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "maxLength": 40 }
+    },
+    "flours": {
+      "type": "array",
+      "minItems": 1,
+      "description": "At least one flour is required.",
+      "items": { "$ref": "#/$defs/flourEntry" }
+    },
+    "liquids": {
+      "type": "array",
+      "maxItems": 30,
+      "items": { "$ref": "#/$defs/liquidEntry" }
+    },
+    "other_ingredients": {
+      "type": "array",
+      "maxItems": 40,
+      "items": { "$ref": "#/$defs/otherEntry" }
+    },
+    "steps": {
+      "type": "array",
+      "maxItems": 60,
+      "items": { "$ref": "#/$defs/step" }
+    },
+    "step_sets": {
+      "type": "array",
+      "maxItems": 10,
+      "description": "Categorized step sequences (e.g. oven vs. a specific bread machine).",
+      "items": { "$ref": "#/$defs/stepSet" }
+    },
+    "techniques": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "enum": ["kneading", "stretch_and_fold", "autolyse", "pre_ferment"] }
+    },
+    "fermentation": { "$ref": "#/$defs/fermentation" },
+    "baking_params": { "$ref": "#/$defs/bakingParams" },
+    "total_prep_time_min": { "type": ["number", "null"], "minimum": 0 },
+    "images": {
+      "type": "array",
+      "maxItems": 10,
+      "description": "Repo-relative paths; file name must match the recipe id.",
+      "items": { "type": "string", "pattern": "^images/recipes/[a-z0-9]+(-[a-z0-9]+)*/[0-9]+\\.webp$" }
+    },
+    "created_at": { "type": "string", "format": "date-time" },
+    "updated_at": { "type": "string", "format": "date-time" }
+  },
+  "$defs": {
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "maxLength": 120 },
+    "customName": { "type": "string", "minLength": 1, "maxLength": 120 },
+    "flourEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["amount_g"],
+      "properties": {
+        "ingredient": { "$ref": "#/$defs/slug" },
+        "custom_name": { "$ref": "#/$defs/customName" },
+        "amount_g": { "type": "number", "minimum": 0, "maximum": 100000 }
+      }
+    },
+    "liquidEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["amount"],
+      "properties": {
+        "ingredient": { "$ref": "#/$defs/slug" },
+        "custom_name": { "$ref": "#/$defs/customName" },
+        "amount": { "type": "number", "minimum": 0, "maximum": 100000 },
+        "unit": {
+          "enum": ["ml", "l", "g", "kg", "tsp", "tbsp", "cup", "fl_oz", "oz", "lb"],
+          "default": "ml"
+        }
+      }
+    },
+    "otherEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["amount"],
+      "properties": {
+        "ingredient": { "$ref": "#/$defs/slug" },
+        "custom_name": { "$ref": "#/$defs/customName" },
+        "category": { "type": "string", "maxLength": 60 },
+        "amount": { "type": "number", "minimum": 0, "maximum": 100000 },
+        "unit": {
+          "enum": ["g", "kg", "oz", "lb", "tsp", "tbsp", "piece", "pinch", "ml", "l", "cup", "fl_oz", "handful"],
+          "default": "g"
+        }
+      }
+    },
+    "step": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["order", "description"],
+      "properties": {
+        "order": { "type": "integer", "minimum": 1 },
+        "description": { "type": "string", "minLength": 1, "maxLength": 4000 },
+        "duration_min": { "type": ["number", "null"], "minimum": 0 },
+        "temperature_c": { "type": ["number", "null"], "minimum": 0, "maximum": 500 }
+      }
+    },
+    "stepSet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["category", "steps"],
+      "properties": {
+        "category": { "$ref": "#/$defs/slug" },
+        "steps": { "type": "array", "minItems": 1, "maxItems": 60, "items": { "$ref": "#/$defs/step" } }
+      }
+    },
+    "fermentation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "bulk_fermentation_min": { "type": ["number", "null"], "minimum": 0 },
+        "proofing_min": { "type": ["number", "null"], "minimum": 0 },
+        "temperature": { "enum": ["room", "fridge", ""] }
+      }
+    },
+    "bakingParams": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "method": { "enum": ["oven", "bread_machine", ""] },
+        "temperature_c": { "type": ["number", "null"], "minimum": 0, "maximum": 500 },
+        "duration_min": { "type": ["number", "null"], "minimum": 0 },
+        "steam": { "type": "boolean" },
+        "program": { "type": ["string", "null"], "maxLength": 120 }
+      }
+    }
+  }
+}
